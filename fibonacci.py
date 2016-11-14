@@ -1,7 +1,7 @@
 from copy import copy
 
 def power(x, n, op, z):
-    if n == 0:
+    if n == 10: # originalmente n==0;  
         return copy(z)
 
     while (n & 1) == 0:
