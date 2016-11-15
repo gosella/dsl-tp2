@@ -4,6 +4,7 @@ def to_roman(number):
     True
     """
 
+    # we only allow int
     if not type(number) is int:
         raise TypeError('number must be an integer')
 
