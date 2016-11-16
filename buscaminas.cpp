@@ -144,8 +144,10 @@ int main() {
     cout << "Board:" << endl;
     while(game.playing) {
         display_board(game, begin(game.board));
-        cout << "Celda? ";
-        cin >> r >> c;
+        cout << "Inserte Fila? ";
+        cin >> r;
+	cout << "Inserte Columna? ";
+	cin >> c;
         game = play(game, r, c);
     }
     display_board(game, begin(game.board));
