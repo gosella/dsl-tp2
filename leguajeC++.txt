@@ -1,0 +1,91 @@
+Programa para la Teoría
+
+
+UNIDAD 1: Un vistazo a C++
+
+El lenguaje de programación C++. Características. El estándar C++14.
+Compiladores. Programas ejecutables.
+Declaración de variables. Asignación. Expresiones.
+Tipos de datos incorporados:
+Booleanos. Operadores.
+Números enteros. Aritmética de rango restringido con y sin signo. Operadores.
+Números con representación en punto flotante. Estandar IEEE 754. Operadores.
+Alias para tipos. Deducción de Tipos.
+Sentencias. Bloques. Comentarios.
+Estructuras de control conocidas: Selección (if) e iteración (while).
+Nuevas estructuras de control: do-while y for.
+Funciones. Definición. Tipo de valor de retorno. Tipo void. Parámetros. Invocación.
+Programa mínimo de C++: Función main().
+Entrada/Salida básica. Streams de Entrada/Salida. cin y cout.
+Cadenas de caracteres terminadas con nulo.
+Tipos compuestos: Arreglos estáticos. Relación con las cadenas de caracteres terminadas con nulo.
+Ámbito y alcance.
+
+
+UNIDAD 2: La Memoria.
+
+Organización de la memoria. Segmentos de código, datos estáticos, pila y montículo.
+Dirección de memoria. Acceso a la memoria.
+Instrucciones. Códigos de máquina.
+Representación interva de valores.
+Números enteros con y sin signo. Binario sin signo y complemento a dos restringidos.
+Números en punto flotante. Estándar IEEE 754.
+Caracteres. Codificacion ASCII. Otras codificaciones.
+Unicode. Codificaciones UTF-8, UTF-16 y UTF-32.
+Pila de invocación. Registro de activación. Variables locales y globales.
+
+Puntero. Declaración. Uso. Puntero nulo. Aritmética de punteros.
+Memoria dinámica. Montículo. Asignación dinámica de memoria.
+
+
+UNIDAD 3: Nuevos conceptos.
+
+Archivos de cabecera. El preprocesador.
+Espacio de nombres. namespace std.
+
+Referencias. Referencias para pasaje de parámetros. Relación con los punteros.
+Semántica de valor y de referencia. Tipo Regular.
+
+Tipos estructurados: struct. Definición. Acceso a campos.
+Asignación. Inicialización. Copia. Limpieza.
+
+
+UNIDAD 4: Estructuras de datos
+
+Lista Enlazada. Características. Operaciones.
+Creación, inserción y borrado de elementos. Recorrido.
+Unión de listas ordenadas.
+
+Contenedores. Arreglo dinámico. Tipo std::vector<T>.
+
+Iteradores. Iteradores como coordenadas sobre el arreglo dinámico.
+Rangos. Tipos de rangos. for basado en rangos.
+
+Iterador de un vector<T>. Iterador de un arreglo estático.
+
+Cadenas de caracteres. Tipo std::string. Variantes. Iterador de un string.
+
+
+UNIDAD 5: Algoritmos.
+
+Algoritmos genéricos.
+Funciones de alto orden. Funciones lambda. Captura de parámetros en lambdas.
+
+swap(). min(). max(). min_element(). max_element(). minmax_element().
+
+for_each(). fill(). generate(). 
+copy(). copy_backward(). transform(). unique(). reverse(). rotate().
+
+Predicados.
+all_of(). any_of(). none_of().
+
+equal(). mismatch().
+find(). count().
+find_if(). count_if().
+
+partition(). partition_point().
+lower_bound(). upper_bound(). binary_search(). merge().
+
+Métodos de Ordenamiento: Selección, Burbujeo e Inserción.
+Comparación de Métodos. Ventajas y desventajas de cada uno.
+
