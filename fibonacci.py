@@ -43,8 +43,7 @@ def slow_fibonacci(n):
 
 
 def worst_fibonacci_ever(n):
-    if n == 0:
-        return 0
-    if n <= 2:
-        return 1
-    return worst_fibonacci_ever(n-1) + worst_fibonacci_ever(n-2)
+    def _fib_help(a, b, n):
+        return _fib_help(b, a+b, n-1) if n > 0 else a
+    return _fib_help(0, 1, n)
+
