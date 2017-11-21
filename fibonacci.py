@@ -25,6 +25,9 @@ def multiply_2x2(x, y):
 
 
 def fibonacci(n):
+    n = int(n)
+    if n < 0:
+        raise ValueError('n debe ser >= 0')
     if n == 0:
         return 0
 
@@ -32,6 +35,10 @@ def fibonacci(n):
 
 
 def slow_fibonacci(n):
+    n = int(n)
+    if n < 0:
+        raise ValueError('n debe ser >= 0')
+
     current = 0
     next = 1
 
@@ -43,8 +50,15 @@ def slow_fibonacci(n):
 
 
 def worst_fibonacci_ever(n):
-    if n == 0:
-        return 0
-    if n <= 2:
-        return 1
-    return worst_fibonacci_ever(n-1) + worst_fibonacci_ever(n-2)
+    n = int(n)
+    if n < 0:
+        raise ValueError('n debe ser >= 0')
+
+    def _fib(n):
+        if n == 0:
+            return 0
+        if n <= 2:
+            return 1
+        return _fib(n-1) + _fib(n-2)
+
+    return _fib(n)
