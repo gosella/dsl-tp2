@@ -34,7 +34,7 @@ def fibonacci(n):
     return power([1, 1, 1, 0], n-1, multiply_2x2, [1, 0, 0, 1])[0]
 
 
-def slow_fibonacci(n):
+def slow_fibonacci_iterative(n):
     n = int(n)
     if n < 0:
         raise ValueError('n debe ser >= 0')
@@ -47,6 +47,12 @@ def slow_fibonacci(n):
         n -= 1
 
     return current
+
+
+def slow_fibonacci_recursive(n):
+    def _fib_help(a, b, n):
+        return _fib_help(b, a+b, n-1) if n > 0 else a
+    return _fib_help(0, 1, n)
 
 
 def worst_fibonacci_ever(n):
