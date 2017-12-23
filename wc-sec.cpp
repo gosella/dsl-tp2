@@ -10,6 +10,12 @@ map<string, int> cantidades;
 
 int main(int argc, char* argv[])
 {
+    //esto es para validar que se haya especificado al menos un archivo
+    if (argc <= 1) {
+      cout << "Uso: wc-sec archivo1 archivo2 archivo3 archivoN" << '\n';
+      return 1;
+    }
+
     auto inicio = chrono::high_resolution_clock::now();
 
     for(int i = 1; i < argc; ++i) {
@@ -21,7 +27,7 @@ int main(int argc, char* argv[])
         cantidades[argv[i]] = cantidad;
     }
 
-    auto fin = chrono::high_resolution_clock::now();    
+    auto fin = chrono::high_resolution_clock::now();
     auto duracion = chrono::duration_cast<chrono::milliseconds>(fin - inicio).count();
 
     int total = 0;
@@ -29,6 +35,6 @@ int main(int argc, char* argv[])
         cout << info.second << " " << info.first << endl;
         total += info.second;
     }
-    cout << total << " total" << endl;    
+    cout << total << " total" << endl;
     cout << "Tiempo: " << duracion << " ms" << endl;
 }
