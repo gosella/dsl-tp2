@@ -21,7 +21,7 @@ type
                       const MaxPasos: Integer): Integer;
   end;
 
-
+(*añado este comentario para molestar*)
 implementation
 
 constructor TPerceptron.Create(const Entradas: Integer);
