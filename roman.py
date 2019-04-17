@@ -3,6 +3,11 @@ def to_roman(number):
     >>> all(to_arabic(to_roman(i)) == i for i in range(1, 4000))
     True
     """
+
+    # we only allow int
+    if not type(number) is int:
+        raise TypeError('number must be an integer')
+
     if number >= 4000:
         raise ValueError('number is too big')
 
