@@ -131,7 +131,19 @@ void display_board(const game_model & game, iter p) {
 }
 
 int main() {
-    auto game = new_game(8, 10, 20);
+	size_t fi;
+	size_t co;
+	size_t mi;
+
+	cout << "Iniciando juego \n";
+	cout << "Elija la cantidad de filas con la que quiere jugar: ";
+	cin  >> fi;
+	cout << "Elija la cantidad de columnas con las que quiere jugar: ";
+	cin  >> co;
+	cout << "Elija la cantidad de minas: ";
+	cin  >> mi;
+
+    auto game = new_game(fi, co, mi);
 
     cout << "Mines:" << endl;
     display_board(game, begin(game.mines));
@@ -144,8 +156,10 @@ int main() {
     cout << "Board:" << endl;
     while(game.playing) {
         display_board(game, begin(game.board));
-        cout << "Celda? ";
-        cin >> r >> c;
+        cout << "Inserte Fila? ";
+        cin >> r;
+	cout << "Inserte Columna? ";
+	cin >> c;
         game = play(game, r, c);
     }
     display_board(game, begin(game.board));
